@@ -1,0 +1,65 @@
+body {
+  background: #526e2dff;
+}
+.App {
+  display: flex;
+  width: 100vw;
+  height: 100vh;
+  flex-direction: column;
+  align-items: center;
+}
+.homePage {
+  display: flex;
+  width: 80vw;
+  flex-direction: column;
+  justify-content: center;
+}
+.homePage div {
+  display: flex;
+  justify-content: space-around;
+}
+.characterCard {
+  background-color: #24325fff;
+  border: 5px solid black;
+  box-shadow: 2px 2px rgba(red, green, blue, 0.8);
+  width: 300px;
+  color: #b7e4f9ff;
+  border-radius: 2%;
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1rem;
+  transition: 0.3s all ease;
+}
+.characterCard:hover {
+  cursor: pointer;
+  transform: scale(1.02);
+}
+.content {
+  display: flex;
+  width: 100vw;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+button {
+  background: #03b1c8;
+  font-size: 400%;
+  border-radius: 10px;
+  color: white;
+  text-shadow: 3px 3px #526e2dff;
+  transition: 0.4s all ease;
+  border: none;
+}
+button:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.pageNum {
+  color: white;
+  font-size: 2rem;
+  margin: 2rem;
+}
+.pagination {
+  display: flex;
+}
