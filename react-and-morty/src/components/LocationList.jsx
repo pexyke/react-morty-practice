@@ -1,6 +1,7 @@
 import React from 'react';
 
 const LocationList = (props) => {
+  
     return (
         <div>
           {props.locations !== "Loading..." && props.locations.results.map((item, i)=>

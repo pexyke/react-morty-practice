@@ -63,3 +63,9 @@ button:hover {
 .pagination {
   display: flex;
 }
+
+
+.characters-container {
+  height: 95vh !important;
+  overflow: auto;
+}

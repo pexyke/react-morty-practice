@@ -17,6 +17,13 @@ export const useCharacters = (pageNum = 1) => {
   return characters === undefined ? "Loading..." : characters;
 };
 
+
+export const getCharacters = async pageNumber => {
+  const characters = (await fetch(mainUrls.characters + pageNumber)).json();
+  return characters;
+};
+
+
 /**
      Fetch data from an open-source API. It returns json containing pagination.
      The json contains an `info` and a `results` property. The `info` contains every information about the pagination,
